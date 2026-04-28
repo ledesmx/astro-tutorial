@@ -11,6 +11,10 @@ const identity = {
 };
 
 const skills = ["Drawing", "Writing", "Coding", "Rust", "ML"];
+
+const happy = true;
+const finished = false;
+const goal = 4;
 ---
 
 <html lang="en">
@@ -49,5 +53,10 @@ const skills = ["Drawing", "Writing", "Coding", "Rust", "ML"];
                 <li>{skill}</li>
             )}
         </ul>
+
+        {happy && <p>I am happy to be learning Astro!</p>}
+        {!finished && <p>The learning is a never ending process.</p>}
+        {goal <= 7 ? <p>I will finish in less than 1 week.</p> : <p>I will finish in about 1 week.</p>}
+
     </body>
 </html>
