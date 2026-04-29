@@ -1,5 +1,6 @@
 ---
 import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 
 const pageTitle = "About Me";
@@ -72,5 +73,6 @@ const textCase = "uppercase";
         {!finished && <p>The learning is a never ending process.</p>}
         {goal <= 7 ? <p>I will finish in less than 1 week.</p> : <p>I will finish in about 1 week.</p>}
 
+        <Footer />
     </body>
 </html>
